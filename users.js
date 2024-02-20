@@ -20,7 +20,7 @@ async function GetUsers() {
                         row += '<td>' + userTodo.id + '</td>' 
                         row += '<td>' + user.name + '</td>' 
                         row += '<td>' + userTodo.title + '</td>' 
-                        row += '<td><input type="checkbox" ' + (userTodo.completed ? 'checked' : '') + ' disabled title="Задача выполнена"></td>';
+                        row += '<td><input type="checkbox" ' + (userTodo.completed ? 'checked' : '') + ' disabled title="Выполнено"id="number_' + userTodo.id + '"></td>'
                         row += '</tr>'
 
                         $('table tbody').append(row)
